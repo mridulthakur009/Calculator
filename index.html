@@ -16,78 +16,78 @@
        <div class="row">
         <div class="col-lg-5 col-lg-offset-3 border4Calc">
           <h1 class="text-center text-primary mrgbtm">Calculator</h1>
-          <input type="text" class="form-control" style="height: 70px;">  
+          <input type="text" class="form-control" id="inputBox" value="" style="height: 70px;" readonly>  
           <div class="row setButton">
             <div class="col-lg-3">
-            <input type="submit" value="+" class="">
+            <input type="submit" value="+"  onclick="val('+')">
             </div>
             <div class="col-lg-3">
-            <input type="submit" value="-" class="">
+            <input type="submit" value="-" onclick="val('-')">
             </div>
             <div class="col-lg-3">
-            <input type="submit" value="x" class="">
+            <input type="submit" value="x" onclick="val('x')">
             </div>
             <div class="col-lg-3">
-            <input type="submit" value="/" class="">
+            <input type="submit" value="÷" onclick="val('÷')">
             </div>             
           </div>
           <div class="row">
           <div class="col-lg-9 btnColor">
             <div class="row setButton">
               <div class="col-lg-4">
-              <input type="submit" value="7" class="">
+              <input type="button" value="7"  onclick="val('7')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="8" class="">
+              <input type="submit" value="8"  onclick="val('8')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="9" class="">
-              </div>
-            </div>
-            <div class="row setButton">
-              <div class="col-lg-4">
-              <input type="submit" value="4" class="">
-              </div>
-              <div class="col-lg-4">
-              <input type="submit" value="5" class="">
-              </div>
-              <div class="col-lg-4">
-              <input type="submit" value="6" class="">
+              <input type="submit" value="9"  onclick="val('9')">
               </div>
             </div>
             <div class="row setButton">
               <div class="col-lg-4">
-              <input type="submit" value="1" class="">
+              <input type="submit" value="4"  onclick="val('4')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="2" class="">
+              <input type="submit" value="5"  onclick="val('5')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="3" class="">
+              <input type="submit" value="6"  onclick="val('6')">
               </div>
             </div>
             <div class="row setButton">
               <div class="col-lg-4">
-              <input type="submit" value="0" class="">
+              <input type="submit" value="1"  onclick="val('1')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="." class="">
+              <input type="submit" value="2"  onclick="val('2')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="C" class="">
+              <input type="submit" value="3"  onclick="val('3')">
+              </div>
+            </div>
+            <div class="row setButton">
+              <div class="col-lg-4">
+              <input type="submit" value="0"  onclick="val('0')">
+              </div>
+              <div class="col-lg-4">
+              <input type="submit" value="." onclick="val('.')">
+              </div>
+              <div class="col-lg-4">
+              <input type="submit" value="C"  onclick="return clearRec()">
               </div>
             </div>
           </div>
           <div class="col-lg-3 ">
-            <input type="submit" value="=" class="setEqButton mrgbtm">
+            <input type="submit" value="=" class="setEqButton mrgbtm" onclick="return equal(num1,num2)">
           </div>
         </div>  
         </div>
       </div>
     </div>
-     </section>
+  </section>
   
-
+<script src="js/javascript.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/js_bootstrap.min.js"></script>  
   </body>
