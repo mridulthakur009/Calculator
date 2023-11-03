@@ -25,10 +25,10 @@
             <input type="submit" value="-" onclick="val('-')">
             </div>
             <div class="col-lg-3">
-            <input type="submit" value="x" onclick="val('x')">
+            <input type="submit" value="x" onclick="val('*')">
             </div>
             <div class="col-lg-3">
-            <input type="submit" value="÷" onclick="val('÷')">
+            <input type="submit" value="÷" onclick="val('/')">
             </div>             
           </div>
           <div class="row">
@@ -74,12 +74,12 @@
               <input type="submit" value="." onclick="val('.')">
               </div>
               <div class="col-lg-4">
-              <input type="submit" value="C"  onclick="return clearRec()">
+              <input type="submit" value="C"  onclick="clearRec()">
               </div>
             </div>
           </div>
           <div class="col-lg-3 ">
-            <input type="submit" value="=" class="setEqButton mrgbtm" onclick="return equal(num1,num2)">
+            <input type="submit" value="=" class="setEqButton mrgbtm" onclick="calc('=')">
           </div>
         </div>  
         </div>
@@ -92,4 +92,3 @@
     <script src="js/js_bootstrap.min.js"></script>  
   </body>
 </html>
-
