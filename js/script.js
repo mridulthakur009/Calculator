@@ -1,9 +1,9 @@
+function val(num){
+    document.getElementById("inputBox").value += num;
+}
 
 function clearRec(){
     document.getElementById("inputBox").value = "";
-}
-function val(num){
-    document.getElementById("inputBox").value += num;
 }
 
 function calc() {
